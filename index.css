@@ -1,0 +1,161 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0
+}
+
+body{
+min-height:100vh;
+font-family:Inter, sans-serif;
+background:linear-gradient(160deg,#0a1a3a,#112a6b,#0a1a3a);
+color:#0b1d3a;
+display:flex;
+justify-content:center;
+align-items:center
+}
+
+.app-shell{
+width:100%;
+max-width:1200px;
+padding:28px
+}
+
+.top-bar{
+text-align:center;
+margin-bottom:26px
+}
+
+.brand{
+font-family:"Playfair Display",serif;
+font-size:58px;
+letter-spacing:6px;
+color:#ffffff;
+text-shadow:0 0 18px rgba(120,160,255,.6)
+}
+
+.subtitle{
+margin-top:6px;
+font-size:14px;
+letter-spacing:3px;
+color:#d6e1ff
+}
+
+.main-card{
+background:linear-gradient(180deg,#ffffff,#f3f6ff);
+border-radius:22px;
+box-shadow:0 25px 60px rgba(0,0,0,.45);
+padding:32px;
+display:grid;
+grid-template-columns:1.1fr 1fr;
+gap:30px
+}
+
+.form-section h2,
+.result-section h2{
+font-family:"Playfair Display",serif;
+color:#0a1f4f;
+margin-bottom:18px
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px
+}
+
+.field{
+display:flex;
+flex-direction:column;
+gap:6px
+}
+
+label{
+font-size:12px;
+letter-spacing:1px;
+color:#27408b
+}
+
+input,select{
+padding:10px 12px;
+border-radius:10px;
+border:1px solid #b9c8ff;
+outline:none;
+background:#ffffff;
+font-size:14px
+}
+
+input:focus,select:focus{
+border-color:#3f5cff;
+box-shadow:0 0 0 2px rgba(63,92,255,.15)
+}
+
+.royal-btn{
+margin-top:22px;
+width:100%;
+padding:14px;
+border:none;
+border-radius:14px;
+font-size:15px;
+letter-spacing:2px;
+color:white;
+cursor:pointer;
+background:linear-gradient(135deg,#1e3cff,#5a7cff);
+box-shadow:0 10px 24px rgba(46,78,255,.5)
+}
+
+.royal-btn:hover{
+transform:translateY(-1px);
+box-shadow:0 14px 30px rgba(46,78,255,.65)
+}
+
+.result-section{
+background:linear-gradient(160deg,#0c1f4a,#0e2b7a);
+border-radius:18px;
+padding:22px;
+color:white
+}
+
+.results-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:14px;
+margin-top:14px
+}
+
+.movie-card{
+background:linear-gradient(160deg,#ffffff,#e9efff);
+border-radius:14px;
+padding:14px 16px;
+color:#0b1f4a;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+
+.movie-title{
+font-weight:600;
+letter-spacing:.5px
+}
+
+.score{
+font-size:12px;
+padding:6px 10px;
+border-radius:999px;
+background:linear-gradient(135deg,#1e3cff,#5a7cff);
+color:white
+}
+
+.footer{
+margin-top:18px;
+text-align:center;
+font-size:12px;
+letter-spacing:2px;
+color:#cdd9ff
+}
+
+@media(max-width:900px){
+.main-card{
+grid-template-columns:1fr
+}
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MORE</title>
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-shell">
+
+<header class="top-bar">
+<div class="brand">MORE</div>
+<div class="subtitle">Personal Movie Recommendation Experience</div>
+</header>
+
+<main class="main-card">
+
+<section class="form-section">
+<h2>Your Royal Profile</h2>
+
+<div class="grid">
+
+<div class="field">
+<label>Age</label>
+<input type="number" id="age" value="22">
+</div>
+
+<div class="field">
+<label>Gender</label>
+<select id="gender">
+<option>female</option>
+<option>male</option>
+</select>
+</div>
+
+<div class="field">
+<label>Relationship</label>
+<select id="relationship_status">
+<option>single</option>
+<option>dating</option>
+<option>married</option>
+</select>
+</div>
+
+<div class="field">
+<label>Mood</label>
+<select id="mood">
+<option>romantic</option>
+<option>happy</option>
+<option>sad</option>
+<option>excited</option>
+<option>relaxed</option>
+<option>bored</option>
+<option>scared</option>
+</select>
+</div>
+
+<div class="field">
+<label>Time of day</label>
+<select id="time_of_day">
+<option>morning</option>
+<option>afternoon</option>
+<option>evening</option>
+<option>night</option>
+</select>
+</div>
+
+<div class="field">
+<label>Month</label>
+<input type="number" min="1" max="12" id="month" value="7">
+</div>
+
+<div class="field">
+<label>Watch with</label>
+<select id="watch_with">
+<option>alone</option>
+<option>friends</option>
+<option>family</option>
+<option>partner</option>
+</select>
+</div>
+
+<div class="field">
+<label>Weather</label>
+<select id="weather">
+<option>rainy</option>
+<option>sunny</option>
+<option>cloudy</option>
+<option>cold</option>
+<option>hot</option>
+</select>
+</div>
+
+</div>
+
+<button id="recommendBtn" class="royal-btn">Discover My Movies</button>
+
+</section>
+
+<section class="result-section">
+<h2>Your Royal Picks</h2>
+<div id="results" class="results-grid"></div>
+</section>
+
+</main>
+
+<footer class="footer">
+MORE · Royal Movie Intelligence
+</footer>
+
+</div>
+
+<script src="api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
