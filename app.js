@@ -43,3 +43,26 @@ resultsBox.appendChild(card)
 })
 
 })
+document.addEventListener("DOMContentLoaded", () => {
+
+const now = new Date()
+
+const monthInput = document.getElementById("month")
+const timeSelect = document.getElementById("time_of_day")
+
+if(monthInput){
+monthInput.value = now.getMonth() + 1
+}
+
+if(timeSelect){
+const hour = now.getHours()
+let slot = "night"
+
+if(hour >= 5 && hour < 12) slot = "morning"
+else if(hour >= 12 && hour < 17) slot = "afternoon"
+else if(hour >= 17 && hour < 21) slot = "evening"
+
+timeSelect.value = slot
+}
+
+})
